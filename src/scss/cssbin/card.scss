@@ -1,0 +1,89 @@
+.card {
+    position: relative;
+    margin: 0; padding: 3rem 1rem 4rem;
+    border-radius: 1.1rem;
+    background: var(--c-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+    box-shadow: inset 0 0 0 .2rem var(--c-blue-gray-100);
+    transition: box-shadow var(--bezier-emerging);
+
+    .svg-icon {
+        fill: var(--c-blue-gray-700);
+        color: var(--c-deep-orange-a400);
+        display: block;
+        margin: 0 auto;
+        width: 6.4rem; height: 6.4rem;
+
+        @include min-width(tablet-portrait) {
+            width: 8rem; height: 8rem;
+        }
+    }
+
+    h3 {
+        margin-bottom: 2rem;
+        text-align: center;
+
+        @include min-width(tablet-portrait) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0 auto; padding: 0;
+        display: inline-flex;
+        flex-direction: column;
+        font-size: 1.4rem;
+        line-height: var(--font-line-md);
+        font-weight: 800;
+
+        li {
+            padding: .4rem 0 .4rem 4rem;
+            background: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m23 11.5-2.44-2.79.34-3.69-3.61-.82L15.4 1 12 2.46 8.6 1 6.71 4.19 3.1 5l.34 3.7L1 11.5l2.44 2.79-.34 3.7 3.61.82L8.6 22l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 11.5Zm-11.408-1.318 1.89-1.89c.38-.38 1.02-.38 1.41 0 .39.39.39 1.02 0 1.41l-1.89 1.89 1.89 1.89c.39.39.39 1.02 0 1.41a.996.996 0 0 1-1.41 0l-1.89-1.89-1.89 1.89a.996.996 0 0 1-1.41 0 .995.995 0 0 1 0-1.41l1.89-1.89-1.89-1.89a.995.995 0 0 1 0-1.41.996.996 0 0 1 1.41 0l1.89 1.89Z' fill='%23B0BEC5'/%3E%3C/svg%3E") center left / 2.4rem 2.4rem no-repeat;
+
+            @include min-width(tablet-portrait) {
+                padding: .5rem 0 .5rem 4rem;
+            }
+
+            &.check {
+                background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m23 11.5-2.44-2.79.34-3.69-3.61-.82L15.4 1 12 2.46 8.6 1 6.71 4.19 3.1 5l.34 3.7L1 11.5l2.44 2.79-.34 3.7 3.61.82L8.6 22l3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69L23 11.5ZM9.38 15.51 7 13.11a.996.996 0 0 1 0-1.41l.07-.07c.39-.39 1.03-.39 1.42 0l1.61 1.62 5.15-5.16c.39-.39 1.03-.39 1.42 0l.07.07c.39.39.39 1.02 0 1.41l-5.92 5.94c-.41.39-1.04.39-1.44 0Z' fill='%234DB6AC'/%3E%3C/svg%3E");
+            }
+        }
+
+        li:not(:last-child) {
+            margin-bottom: .5rem;
+        }
+    }
+
+    .btn-group {
+        margin-top: 3rem;
+
+        @include min-width(tablet-portrait) {
+            position: absolute;
+            top: auto; right: 0; bottom: -2.5rem; left: 0;
+            margin: auto;
+            transition: opacity var(--bezier-emerging);
+            opacity: 0;
+        }
+    }
+
+    @include min-width(tablet-portrait) {
+        width: 29rem;
+        padding: 7rem 2rem 7.5rem; margin: 0 0 2.5rem;
+        box-shadow: inset 0 0 0 .1rem var(--c-blue-gray-100);
+
+        &:hover {
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, .25) 0 2.5rem 5rem -1.2rem;
+
+            .btn-group {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+

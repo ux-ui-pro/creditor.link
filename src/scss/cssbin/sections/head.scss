@@ -1,0 +1,14 @@
+.section--head {
+    position: relative;
+    padding: 0 0 3rem;
+    background:
+        url('../img/svg/head-banner.svg') center bottom 11rem / 20rem 22.9rem no-repeat,
+        linear-gradient(var(--c-blue-50), var(--c-white));
+
+    @include min-width(tablet-portrait) {
+        padding: 0 0 9.8rem;
+        background: url('../img/svg/head-banner.svg') calc(50% + 36rem) 0 / 40.4rem 46.4rem no-repeat;
+    }
+}
+
+

@@ -1,0 +1,39 @@
+%app-width-paddings {
+    --left: 1rem;
+    --right: 1rem;
+    padding-left: var(--left); padding-right: var(--right);
+
+    @include min-width(phone-portrait) {
+        --left: 2rem; --right: 2rem;
+    }
+
+    @include min-width(tablet-portrait) {
+        --left: 3rem; --right: 3rem;
+    }
+}
+
+%text-md-normal {
+    font-size: var(--font-size-md);
+    line-height: var(--font-line-md);
+    font-weight: 400;
+}
+
+%text-md-bold {
+    font-size: var(--font-size-md);
+    line-height: var(--font-line-md);
+    font-weight: 600;
+}
+
+%text-sm-normal {
+    font-size: var(--font-size-sm);
+    line-height: var(--font-line-sm);
+    font-weight: 400;
+}
+
+%text-sm-bold {
+    font-size: var(--font-size-sm);
+    line-height: var(--font-line-sm);
+    font-weight: 600;
+}
+
+

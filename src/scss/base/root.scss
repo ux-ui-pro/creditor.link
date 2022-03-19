@@ -1,0 +1,47 @@
+:root {
+    --app-max-width: 138rem;
+
+
+    --c-white: hsl(0 0% 100%);
+    --c-blue-50: hsl(205 87% 94%);
+
+    --c-blue-800: hsl(212 80% 42%);
+    --c-gray-100: hsl(0 0% 96%);
+    --c-blue-gray-100: hsl(198 16% 84%);
+    --c-blue-gray-200: hsl(200 15% 73%);
+    --c-blue-gray-300: hsl(200 16% 62%);
+    --c-blue-gray-700: hsl(199 18% 33%);
+    --c-blue-gray-800: hsl(200 18% 26%);
+    --c-blue-gray-900: hsl(200 19% 18%);
+    --c-teal-50: hsl(177 41% 91%);
+    --c-teal-300-h: 174;
+    --c-teal-300-s: 42%;
+    --c-teal-300-l: 51%;
+    --c-teal-300: hsl(var(--c-teal-300-h) var(--c-teal-300-s) var(--c-teal-300-l));
+    --c-deep-orange-a400: hsl(14 100% 50%);
+
+    --c-overlay-body: hsla(0 0% 2% / .72);
+
+    --font-size-md: 1.4rem;
+    --font-size-sm: 1.2rem;
+
+    --font-line-md: 125%;
+    --font-line-sm: 125%;
+
+    @include min-width(tablet-portrait) {
+        --font-size-md: 1.6rem;
+        --font-size-sm: 1.4rem;
+
+        --font-line-md: 150%;
+        --font-line-sm: 150%;
+    }
+
+    --c-scrollbar-track: hsl(0 0% 98%);
+    --c-scrollbar-thumb: hsl(0 0% 40%);
+    --c-scrollbar-hover: hsl(0 0% 60%);
+
+    --bezier-hover: 195ms cubic-bezier(0.4, 0, 0.2, 1);
+    --bezier-emerging: 600ms cubic-bezier(0.200, 0.965, 0.000, 1.005);
+}
+
+

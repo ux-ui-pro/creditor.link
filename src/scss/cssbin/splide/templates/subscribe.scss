@@ -1,0 +1,28 @@
+.carousel-subscribe {
+    margin-top: 3rem;
+
+    @include min-width(tablet-portrait) {
+        margin-top: 5rem;
+    }
+}
+
+@include min-width(tablet-portrait) {
+    .carousel-subscribe {
+        .splide__track {
+            overflow: visible;
+        }
+
+        .splide__list {
+            display: flex !important;
+            justify-content: center;
+        }
+
+        .splide__slide {
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+    }
+}
+
+

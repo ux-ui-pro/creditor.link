@@ -1,0 +1,21 @@
+.btn-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &--left {
+        @include min-width(tablet-portrait) {
+            justify-content: flex-start;
+        }
+    }
+
+    &--right {
+        @include min-width(tablet-portrait) {
+            justify-content: flex-end;
+        }
+    }
+}
+
+

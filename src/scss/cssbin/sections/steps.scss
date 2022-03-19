@@ -1,0 +1,9 @@
+.section--steps {
+    padding: 2rem 0 5rem;
+
+    @include min-width(tablet-portrait) {
+        padding: 6.2rem 0 10rem;
+    }
+}
+
+

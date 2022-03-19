@@ -1,0 +1,102 @@
+.steps {
+    max-width: 116rem;
+    margin: 0 0 2rem; padding: 0;
+
+    @include min-width(tablet-portrait) {
+        margin: auto; padding: 9rem 0 6rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        @include min-width(tablet-portrait) {
+            flex-direction: row;
+
+            &:not(:last-child) {
+                margin-bottom: 6rem;
+            }
+
+            &:nth-child(odd) {
+                padding-left: 5rem;
+            }
+
+            &:nth-child(even) {
+                padding-right: 5rem;
+            }
+        }
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+        margin: 2.5rem 0 1.5rem;
+
+        @include min-width(tablet-portrait) {
+            margin: 0;
+        }
+
+        > div {
+            max-height: 14rem;
+            min-width: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+
+            @include min-width(phone-landscape) {
+                max-height: 20rem;
+            }
+
+            @include min-width(tablet-portrait) {
+                max-height: 30rem;
+            }
+        }
+
+        @include min-width(tablet-portrait) {
+            flex: 0.9;
+        }
+
+        @include max-width(tablet-portrait) {
+            order: 1;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            max-width: 52rem;
+            color: var(--c-blue-gray-300);
+        }
+
+        @include min-width(tablet-portrait) {
+            flex: 1.1;
+            justify-content: center;
+            text-align: left;
+            padding: 0;
+
+            h2 {
+                width: 64%;
+            }
+
+            p {
+                width: 64%;
+                max-width: none;
+            }
+        }
+
+        @include max-width(tablet-portrait) {
+            order: 2;
+        }
+    }
+}
+
+

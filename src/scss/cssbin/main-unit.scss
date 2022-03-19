@@ -1,0 +1,48 @@
+.main-unit {
+    --indents: 3.2rem 0 27rem;
+    padding: var(--indents);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include min-width(tablet-portrait) {
+        --indents: 1rem 0 5rem;
+        min-height: 54rem;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    h1 {
+        max-width: 46rem;
+        text-align: center;
+
+        @include min-width(tablet-portrait) {
+            max-width: 60rem;
+            text-align: left;
+        }
+    }
+
+    p {
+        @extend %text-sm-bold;
+        color: var(--c-blue-gray-300);
+        margin-top: 0; padding-left: .1rem;
+        text-align: center;
+        max-width: 32rem;
+
+        @include min-width(tablet-portrait) {
+            max-width: 36rem;
+            margin-top: -1rem; padding-left: .2rem;
+            text-align: left;
+        }
+    }
+
+    .btn-group {
+        margin-top: 2rem;
+
+        @include min-width(tablet-portrait) {
+            margin-top: 3rem;
+        }
+    }
+}
+
+

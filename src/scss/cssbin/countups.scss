@@ -1,0 +1,40 @@
+.countups {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 3.2rem;
+
+    @include min-width(tablet-portrait) {
+        flex-wrap: nowrap;
+    }
+
+    &__item {
+        width: 50%;
+        padding: 2rem 1rem;
+
+        @include min-width(tablet-portrait) {
+            width: auto;
+            flex: 1;
+        }
+    }
+
+    h2 {
+        margin: 0 0 .8rem;
+        font-size: 2.8rem;
+        line-height: 1;
+        color: var(--c-blue-800);
+
+        @include min-width(tablet-portrait) {
+            margin: 0 0 1.4rem;
+            font-size: 5.2rem;
+        }
+    }
+
+    p {
+        margin: 0;
+        @extend %text-sm-bold;
+        color: var(--c-blue-gray-300);
+    }
+}
+
+

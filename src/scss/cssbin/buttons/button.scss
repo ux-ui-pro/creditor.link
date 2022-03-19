@@ -1,0 +1,49 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0; padding: 0;
+    background: none;
+    border: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    line-height: normal;
+    letter-spacing: .01rem;
+    border-radius: .5rem;
+
+    &:not(:last-child) {
+        margin-right: 1.5rem;
+
+        @include min-width(tablet-portrait) {
+            margin-right: 1.8rem;
+        }
+    }
+
+    &--sm {
+        height: 3.6rem;
+        line-height: 3.6rem;
+        padding: 0 1.6rem;
+    }
+
+    &--md {
+        height: 3.6rem;
+        line-height: 3.6rem;
+        padding: 0 1.2rem;
+
+        @include min-width(tablet-portrait) {
+            height: 5rem;
+            line-height: 5rem;
+            padding: 0 2rem;
+        }
+    }
+}
+
+

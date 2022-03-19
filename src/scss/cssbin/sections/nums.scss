@@ -1,0 +1,10 @@
+.section--nums {
+    padding: 1rem 0 4rem;
+    background: var(--c-gray-100);
+
+    @include min-width(tablet-portrait) {
+        padding: 7.3rem 0 7.4rem;
+    }
+}
+
+

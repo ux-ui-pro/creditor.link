@@ -1,0 +1,10 @@
+.section--why {
+    padding: 2rem 0 5rem;
+    background: var(--c-gray-100);
+
+    @include min-width(tablet-portrait) {
+        padding: 6.2rem 0 10rem;
+    }
+}
+
+

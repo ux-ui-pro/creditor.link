@@ -1,0 +1,44 @@
+.nav-main {
+    ul {
+        list-style: none;
+        margin: 0; padding: 2rem 1.5rem;
+
+        @include min-width(tablet-portrait) {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        li {
+            @include min-width(tablet-portrait) {
+                display: flex;
+            }
+
+            a {
+                display: flex;
+                line-height: 4rem;
+                font-size: 1.7rem;
+                color: var(--c-blue-gray-800);
+
+                @include min-width(tablet-portrait) {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                    line-height: var(--font-line-md);
+                    padding: 1.2rem 2.6rem;
+
+                    &:not(:hover) {
+                        color: var(--c-blue-gray-300);
+                    }
+                }
+            }
+
+            @include max-width(tablet-portrait) {
+                &:not(:last-child) {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+
+
