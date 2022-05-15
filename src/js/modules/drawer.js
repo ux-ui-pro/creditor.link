@@ -1,6 +1,6 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
-function Drawer() {
+export function Drawer() {
 
     const bslTarget = document.querySelector('.drawer')
 
@@ -140,7 +140,5 @@ function Drawer() {
     document.addEventListener('keydown', keydownHandler, false)
 
 }
-
-Drawer()
 
 
