@@ -3,7 +3,6 @@
 /gulp
 Thumbs.db
 gulpfile.js
-package.json
 package-lock.json
 *.txt
 *.log
